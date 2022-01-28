@@ -138,12 +138,14 @@ function benefithandler() {
 
         if (!rate) {
             output.innerHTML='<span class="text-blue-800 text-size-sm">Please insert a valid age </span>';
-        semiAnnual.innerHTML = ''
-        monthly.innerHTML= ''
+        semiAnnual.innerHTML = '';
+        quarterly.innerHTML = '';
+        monthly.innerHTML= '';
         } else {
             output.innerHTML='<span class="text-blue-800 text-size-sm">Please insert a valid premium</span>';
-        semiAnnual.innerHTML = ''
-        monthly.innerHTML= ''
+        semiAnnual.innerHTML = '';
+        quarterly.innerHTML = '';
+        monthly.innerHTML= '';
         }
         
 
@@ -306,12 +308,14 @@ function benefithandler() {
     if (isNaN(benefit.value)|| !benefit.value || !rate){
         if (!rate) {
             output.innerHTML='<span class="text-blue-800 text-size-sm">Please insert a valid age </span>';
-        semiAnnual.innerHTML = ''
-        monthly.innerHTML= ''
+        semiAnnual.innerHTML = '';
+        quarterly.innerHTML = '';
+        monthly.innerHTML= '';
         } else {
             output.innerHTML='<span class="text-blue-800 text-size-sm">Please insert a valid benefit</span>';
-        semiAnnual.innerHTML = ''
-        monthly.innerHTML= ''
+        semiAnnual.innerHTML = '';
+        quarterly.innerHTML = '';
+        monthly.innerHTML= '';
         }
         
 
