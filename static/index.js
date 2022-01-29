@@ -31,7 +31,7 @@ function benefithandler() {
             }
             rate=rateData[age.value][earningAge.value]
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
         
         
@@ -48,7 +48,7 @@ function benefithandler() {
               }
             rate=rateData[age.value][earningAge.value]
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
 
     }else if(gender.value ==="female" && premiumFrequency.value === "annual"){
@@ -66,7 +66,7 @@ function benefithandler() {
             rate=rateData[age.value][earningAge.value]
 
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
 
     }else if(gender.value ==="female" && premiumFrequency.value === "single"){
@@ -82,7 +82,7 @@ function benefithandler() {
              }
             rate=rateData[age.value][earningAge.value]
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
 
     }else if(gender.value ==="male" && premiumFrequency.value === "annual5"){
@@ -94,7 +94,7 @@ function benefithandler() {
             rateData=""
             rate=rateData[age.value][earningAge.value]
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
 
     }else if(gender.value ==="male" && premiumFrequency.value === "single5"){
@@ -106,7 +106,7 @@ function benefithandler() {
             rateData=""
             rate=rateData[age.value][earningAge.value]
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
 
     }else if(gender.value ==="female" && premiumFrequency.value === "annual5"){
@@ -118,7 +118,7 @@ function benefithandler() {
             rateData=""
             rate=rateData[age.value][earningAge.value]
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
 
     }else if(gender.value ==="female" && premiumFrequency.value === "single5"){
@@ -130,7 +130,7 @@ function benefithandler() {
             rateData=""
             rate=rateData[age.value][earningAge.value]
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
 
     }
@@ -209,7 +209,7 @@ function benefithandler() {
             rate=rateData[age.value][earningAge.value]
 
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
         
         
@@ -226,7 +226,7 @@ function benefithandler() {
               }
               rate=rateData[age.value][earningAge.value]
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
 
     }else if(gender.value ==="female" && premiumFrequency.value === "annual"){
@@ -243,7 +243,7 @@ function benefithandler() {
             }
             rate=rateData[age.value][earningAge.value]
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
 
     }else if(gender.value ==="female" && premiumFrequency.value === "single"){
@@ -254,10 +254,12 @@ function benefithandler() {
             rate=rateData[age.value][earningAge.value]
             
         }else if(guarantyPeriod.value ==="10"){
-            rateData=""
+            rateData={
+                21:[1091.19, 714.96, 471.15, 315.15, 217.72], 22:[1182.34, 771.63, 506.68, 336.70, 230.34], 23:[1282.01, 834.19, 545.35, 360.04, 244.08], 24:[1282.01, 834.19, 545.35, 360.04, 244.08], 25:[1508.74, 976.17, 632.78, 412.50, 274.65], 26:[1637.56, 1056.67, 682.20, 441.98, 291.67], 27:[1778.04, 1144.31, 735.90, 473.93, 310.00], 28:[1931.30, 1239.81, 794.32, 508.60, 329.80], 29:[2098.62, 1343.94, 857.94, 546.26, 351.22], 30:[2281.37, 1457.56, 927.27, 587.23, 374.45], 31:[2481.08, 1581.60, 1002.89, 631.86, 399.70], 32:[2699.43, 1717.09, 1085.44, 680.55, 427.19], 33:[2938.26, 1865.18, 1175.62, 733.70, 457.18], 34:[3199.59, 2027.09, 1274.18, 791.78, 489.94], 35:[3485.64, 2204.20, 1381.96, 855.30, 525.77], 36:[3798.85, 2398.00, 1499.86, 924.80, 565.00], 37:[4141.91, 2610.13, 1628.90, 1000.90, 607.99], 38:[4517.78, 2842.40, 1770.15, 1084.24, 655.13], 39:[4929.69, 3096.82, 1924.81, 1175.55, 706.83], 40:[5381.20, 3375.60, 2094.19, 1275.61, 763.55], 41:[5876.14, 3681.19, 2279.75, 1385.28, 825.80], 42:[6418.66, 4016.32, 2483.08, 1505.50, 894.13], 43:[7013.12, 4384.03, 2705.93, 1637.33, 969.14], 44:[7663.97, 4787.72, 2950.29, 1781.90, 1051.49], 45:[8375.47, 5231.15, 3218.33, 1940.50, 1141.93], 46:[9151.23, 5718.44, 3512.50, 2114.51, 1241.25], 47:[9993.13, 6254.05, 3835.58, 2305.52, 1350.37], 48:[10901.37, 6842.62, 4190.71, 2515.26, 1470.27], 49:[null, 7488.64, 4581.47, 2745.67, 1602.09], 50:[null, 8195.89, 5011.99, 2998.94, 1747.05], 51:[null, 8966.49, 5486.98, 3277.50, 1906.56], 52:[null, 9799.36, 6011.81, 3584.12, 2082.18], 53:[null, 10691.11, 6592.27, 3921.97, 2275.67], 54:[null, null, 7234.09, 4294.69, 2489.03], 55:[null, null, 7941.69, 4706.54, 2724.49], 56:[null, null, 8715.76, 5162.64, 2984.63], 57:[null, null, 9549.97, 5669.23, 3272.33], 58:[null, null, 10431.81, 6233.94, 3590.95], 59:[null, null, null, 6865.69, 3944.29], 60:[null, null, null, 7573.15, 4336.80], 61:[null, null, null, 8360.03, 4773.72], 62:[null, null, null, 9215.48, 5261.45], 63:[null, null, null, 10108.48, 5808.20], 64:[null, null, null, null, 6425.24], 65:[null, null, null, null, 7127.81], 66:[null, null, null, null, 7931.95], 67:[null, null, null, null, 8836.63], 68:[null, null, null, null, 9790.35]
+             }
             rate=rateData[age.value][earningAge.value]
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
 
     }else if(gender.value ==="male" && premiumFrequency.value === "annual5"){
@@ -269,7 +271,7 @@ function benefithandler() {
             rateData=""
             rate=rateData[age.value][earningAge.value]
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
 
     }else if(gender.value ==="male" && premiumFrequency.value === "single5"){
@@ -280,7 +282,7 @@ function benefithandler() {
             rateData=""
             rate=rateData[age.value][earningAge.value]
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
 
     }else if(gender.value ==="female" && premiumFrequency.value === "annual5"){
@@ -292,7 +294,7 @@ function benefithandler() {
             rateData=""
             rate=rateData[age.value][earningAge.value]
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
 
     }else if(gender.value ==="female" && premiumFrequency.value === "single5"){
@@ -304,7 +306,7 @@ function benefithandler() {
             rateData=""
             rate=rateData[age.value][earningAge.value]
         }else{
-            alert("An error just occurred")
+            alert("No gender or guaranty period selected")
         }
 
     }
