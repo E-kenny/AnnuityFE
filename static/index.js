@@ -70,9 +70,9 @@ function benefithandler() {
         }
 
     }else if(gender.value ==="female" && premiumFrequency.value === "single"){
-        if (guarantyPeriod==="5") {
+        if (guarantyPeriod.value==="5") {
             rateData={
-                41:[5847.19, 3650.35, 2253.04, 1361.04, 796.22], 42:[6386.99, 3982.61, 2453.89, 1479.02, 861.80], 43:[6978.48, 4347.17, 2674.03, 1608.39, 933.80], 44:[7626.06, 4747.39, 2915.41, 1750.26, 1012.87], 45:[8334.00,	5187.01, 3180.19, 1,905.90, 1099.70], 46:[9105.87, 5670.12, 3470.79, 2076.69, 1195.08], 47:[]
+                21:[1086.51, 709.66, 466.56, 310.92, 212.25], 22:[1176.89, 765.78, 501.60, 332.09, 224.71], 23:[1276.07, 827.82, 539.81, 355.02, 237.95], 24:[1384.05, 895.26, 581.25, 379.77, 252.13], 25:[1501.67, 968.60, 626.20, 406.52, 267.36], 26:[1629.85, 1048.40, 675.02, 435.47, 283.72], 27:[1769.62, 1135.30, 728.08, 466.83, 301.33], 28:[1922.12, 1229.98, 785.79, 500.85, 320.35], 29:[2088.60, 1333.22, 848.63, 537.81, 340.91], 30:[2270.44, 1445.86, 917.11, 578.01, 363.20], 31:[2469.15, 1568.83, 991.81, 621.81, 387.42], 32:[2686.41, 1703.16, 1073.35, 669.57, 413.79], 33:[2924.04, 1849.97, 1162.42, 721.72,  442.56], 34:[3184.05, 2010.49, 1259.77, 778.70, 473.98], 35:[3468.67, 2186.07, 1366.23, 841.02, 508.35], 36:[3780.31, 2378.20, 1482.69, 909.22, 545.98], 37:[4121.65, 2588.51, 1610.14, 983.88, 587.22], 38:[4495.64, 2818.78, 1749.66, 1065.66, 632.44], 39:[4905.49, 3071.01, 1902.43, 1155.25, 682.04], 40:[5354.73, 3347.39, 2069.75, 1253.43, 736.47], 41:[5847.19, 3650.35, 2253.04, 1361.04, 796.22], 42:[6386.99, 3982.61, 2453.89, 1479.02, 861.80], 43:[6978.48, 4347.17, 2674.03, 1608.39, 933.80], 44:[7626.06, 4747.39, 2915.41, 1750.26, 1012.87], 45:[8334.00,	5187.01, 3180.19, 1905.90, 1099.70], 46:[9105.87, 5670.12, 3470.79, 2076.69, 1195.08], 47:[9943.56, 6201.14, 3789.95, 2264.15, 1299.86], 48:[10847.24, 6784.66, 4140.76, 2470.00, 1415.02], 49:[null, 7425.15, 4526.78, 2696.14, 1541.62], 50:[null, 8126.34, 4952.08, 2944.71, 1680.86], 51:[null, 8890.32, 5421.32, 3218.12, 1834.08], 52:[null, 9716.04, 5939.78, 3519.07, 2002.78], 53:[null, 10600.14, 6513.20, 3850.68, 2188.66], 54:[null, null, 7147.25, 4216.51, 2393.63], 55:[null, null, 7846.26, 4620.76, 2619.85], 56:[null, null, 8610.94, 5068.44, 2869.77], 57:[null, null, 9435.02, 5565.68, 3146.19], 58:[null, null, 10306.14, 6119.98, 3452.31], 59:[null, null, null, 6740.07, 3791.80], 60:[null, null, null, 7434.47, 4168.94], 61:[null, null, null, 8206.82, 4588.75], 62:[null, null, null, 9046.46, 5057.38], 63:[null, null, null, 9922.92, 5582.73], 64:[null, null, null, null, 6175.62], 65:[null, null, null, null, 6850.69], 66:[null, null, null, null, 7623.35], 67:[null, null, null, null, 8492.58], 68:[null, null, null, null, 9408.85]
             }
             rate=rateData[age.value][earningAge.value]
             
@@ -84,7 +84,7 @@ function benefithandler() {
         }
 
     }else if(gender.value ==="male" && premiumFrequency.value === "annual5"){
-        if (guarantyPeriod==="5") {
+        if (guarantyPeriod.value==="5") {
             rateData=""
             rate=rateData[age.value][earningAge.value]
             
@@ -96,7 +96,7 @@ function benefithandler() {
         }
 
     }else if(gender.value ==="male" && premiumFrequency.value === "single5"){
-        if (guarantyPeriod==="5") {
+        if (guarantyPeriod.value==="5") {
             rateData=""
             rate=rateData[age.value][earningAge.value]
             
@@ -108,7 +108,7 @@ function benefithandler() {
         }
 
     }else if(gender.value ==="female" && premiumFrequency.value === "annual5"){
-        if (guarantyPeriod==="5") {
+        if (guarantyPeriod.value==="5") {
             rateData=""
             rate=rateData[age.value][earningAge.value]
             
@@ -120,7 +120,7 @@ function benefithandler() {
         }
 
     }else if(gender.value ==="female" && premiumFrequency.value === "single5"){
-        if (guarantyPeriod==="5") {
+        if (guarantyPeriod.value==="5") {
             rateData=""
             rate=rateData[age.value][earningAge.value]
             
@@ -245,8 +245,10 @@ function benefithandler() {
         }
 
     }else if(gender.value ==="female" && premiumFrequency.value === "single"){
-        if (guarantyPeriod==="5") {
-            rateData=""
+        if (guarantyPeriod.value==="5") {
+            rateData={
+                21:[1086.51, 709.66, 466.56, 310.92, 212.25], 22:[1176.89, 765.78, 501.60, 332.09, 224.71], 23:[1276.07, 827.82, 539.81, 355.02, 237.95], 24:[1384.05, 895.26, 581.25, 379.77, 252.13], 25:[1501.67, 968.60, 626.20, 406.52, 267.36], 26:[1629.85, 1048.40, 675.02, 435.47, 283.72], 27:[1769.62, 1135.30, 728.08, 466.83, 301.33], 28:[1922.12, 1229.98, 785.79, 500.85, 320.35], 29:[2088.60, 1333.22, 848.63, 537.81, 340.91], 30:[2270.44, 1445.86, 917.11, 578.01, 363.20], 31:[2469.15, 1568.83, 991.81, 621.81, 387.42], 32:[2686.41, 1703.16, 1073.35, 669.57, 413.79], 33:[2924.04, 1849.97, 1162.42, 721.72,  442.56], 34:[3184.05, 2010.49, 1259.77, 778.70, 473.98], 35:[3468.67, 2186.07, 1366.23, 841.02, 508.35], 36:[3780.31, 2378.20, 1482.69, 909.22, 545.98], 37:[4121.65, 2588.51, 1610.14, 983.88, 587.22], 38:[4495.64, 2818.78, 1749.66, 1065.66, 632.44], 39:[4905.49, 3071.01, 1902.43, 1155.25, 682.04], 40:[5354.73, 3347.39, 2069.75, 1253.43, 736.47], 41:[5847.19, 3650.35, 2253.04, 1361.04, 796.22], 42:[6386.99, 3982.61, 2453.89, 1479.02, 861.80], 43:[6978.48, 4347.17, 2674.03, 1608.39, 933.80], 44:[7626.06, 4747.39, 2915.41, 1750.26, 1012.87], 45:[8334.00,	5187.01, 3180.19, 1905.90, 1099.70], 46:[9105.87, 5670.12, 3470.79, 2076.69, 1195.08], 47:[9943.56, 6201.14, 3789.95, 2264.15, 1299.86], 48:[10847.24, 6784.66, 4140.76, 2470.00, 1415.02], 49:[null, 7425.15, 4526.78, 2696.14, 1541.62], 50:[null, 8126.34, 4952.08, 2944.71, 1680.86], 51:[null, 8890.32, 5421.32, 3218.12, 1834.08], 52:[null, 9716.04, 5939.78, 3519.07, 2002.78], 53:[null, 10600.14, 6513.20, 3850.68, 2188.66], 54:[null, null, 7147.25, 4216.51, 2393.63], 55:[null, null, 7846.26, 4620.76, 2619.85], 56:[null, null, 8610.94, 5068.44, 2869.77], 57:[null, null, 9435.02, 5565.68, 3146.19], 58:[null, null, 10306.14, 6119.98, 3452.31], 59:[null, null, null, 6740.07, 3791.80], 60:[null, null, null, 7434.47, 4168.94], 61:[null, null, null, 8206.82, 4588.75], 62:[null, null, null, 9046.46, 5057.38], 63:[null, null, null, 9922.92, 5582.73], 64:[null, null, null, null, 6175.62], 65:[null, null, null, null, 6850.69], 66:[null, null, null, null, 7623.35], 67:[null, null, null, null, 8492.58], 68:[null, null, null, null, 9408.85]
+            }
             rate=rateData[age.value][earningAge.value]
             
         }else if(guarantyPeriod.value ==="10"){
@@ -257,7 +259,7 @@ function benefithandler() {
         }
 
     }else if(gender.value ==="male" && premiumFrequency.value === "annual5"){
-        if (guarantyPeriod==="5") {
+        if (guarantyPeriod.value==="5") {
             rateData=""
             rate=rateData[age.value][earningAge.value]
             
@@ -269,7 +271,7 @@ function benefithandler() {
         }
 
     }else if(gender.value ==="male" && premiumFrequency.value === "single5"){
-        if (guarantyPeriod==="5") {
+        if (guarantyPeriod.value==="5") {
             rateData=""
             rate=rateData[age.value][earningAge.value]
         }else if(guarantyPeriod.value ==="10"){
@@ -280,7 +282,7 @@ function benefithandler() {
         }
 
     }else if(gender.value ==="female" && premiumFrequency.value === "annual5"){
-        if (guarantyPeriod==="5") {
+        if (guarantyPeriod.value==="5") {
             rateData=""
             rate=rateData[age.value][earningAge.value]
             
@@ -292,7 +294,7 @@ function benefithandler() {
         }
 
     }else if(gender.value ==="female" && premiumFrequency.value === "single5"){
-        if (guarantyPeriod==="5") {
+        if (guarantyPeriod.value==="5") {
             rateData=""
             rate=rateData[age.value][earningAge.value]
             
