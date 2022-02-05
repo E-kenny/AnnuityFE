@@ -179,11 +179,11 @@ function benefithandler() {
 
 
         
-        output.innerHTML='<span class="text-green-600 text-size-sm mr-4">Annual benefit:</span>  ' + benefit.toFixed(2)
-        semiAnnual.innerHTML = '<span class="text-green-600 text-size-sm mr-4">Semi-annual benefit:</span>  ' + halfYear.toFixed(2)
-        quarterly.innerHTML = '<span class="text-green-600 text-size-sm mr-4">Quarterly benefit:</span>  ' + quater.toFixed(2)
+        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual benefit:</span>  ' + benefit.toFixed(2)
+        semiAnnual.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Semi-annual benefit:</span>  ' + halfYear.toFixed(2)
+        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly benefit:</span>  ' + quater.toFixed(2)
 
-        monthly.innerHTML= '<span class="text-green-600 text-size-sm mr-4">Monthly benefit:</span>  ' + oneMonth.toFixed(2)
+        monthly.innerHTML= '<span class="text-blue-700 text-size-sm mr-4">Monthly benefit:</span>  ' + oneMonth.toFixed(2)
      }
     
       
@@ -376,13 +376,13 @@ function benefithandler() {
         let toFixedQuarterly = quarter.toFixed(2)
 
         
-        output.innerHTML='<span class="text-green-600 text-size-sm mr-4">Annual premium:</span>  ' + premium.toFixed(2)
+        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual premium:</span>  ' + premium.toFixed(2)
         
-        semiAnnual.innerHTML = '<span class="text-green-600 mr-4">Semi-annual premium:</span>  ' +  toFixedhalfyear
+        semiAnnual.innerHTML = '<span class="text-blue-700 mr-4">Semi-annual premium:</span>  ' +  toFixedhalfyear
         
-        quarterly.innerHTML = '<span class="text-green-600 text-size-sm mr-4">Quarterly benefit:</span>  ' + toFixedQuarterly
+        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly benefit:</span>  ' + toFixedQuarterly
 
-        monthly.innerHTML= '<span class="text-green-600 mr-4">Monthly premium:</span>  ' + 
+        monthly.innerHTML= '<span class="text-blue-700 mr-4">Monthly premium:</span>  ' + 
         toFixedOneMonth
 
         
