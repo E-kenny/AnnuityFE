@@ -379,7 +379,7 @@ function benefithandler() {
         
         semiAnnual.innerHTML = '<span class="text-blue-700 mr-4">Semi-annual premium:</span>  ' +  toFixedhalfyear
         
-        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly benefit:</span>  ' + toFixedQuarterly
+        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly premium:</span>  ' + toFixedQuarterly
 
         monthly.innerHTML= '<span class="text-blue-700 mr-4">Monthly premium:</span>  ' + 
         toFixedOneMonth
