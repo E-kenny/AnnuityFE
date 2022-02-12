@@ -171,19 +171,19 @@ function benefithandler() {
 
     }else{
 
-        benefit =(premium.value -1000)*1000/rate;
+        benefit =Math.round((premium.value -1000)*1000/rate);
 
-        let halfYear = benefit/2
-        let oneMonth = benefit/12
-        let quater = benefit/3
+        let halfYear = Math.round(benefit/2)
+        let oneMonth = Math.round(benefit/12)
+        let quarter = Math.round(benefit/3)
 
 
         
-        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual benefit:</span>  ' + benefit.toFixed(2)
-        semiAnnual.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Semi-annual benefit:</span>  ' + halfYear.toFixed(2)
-        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly benefit:</span>  ' + quater.toFixed(2)
+        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual benefit:</span>  ' + benefit
+        semiAnnual.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Semi-annual benefit:</span>  ' + halfYear
+        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly benefit:</span>  ' + quarter
 
-        monthly.innerHTML= '<span class="text-blue-700 text-size-sm mr-4">Monthly benefit:</span>  ' + oneMonth.toFixed(2)
+        monthly.innerHTML= '<span class="text-blue-700 text-size-sm mr-4">Monthly benefit:</span>  ' + oneMonth
      }
     
       
@@ -362,27 +362,24 @@ function benefithandler() {
 
      }else {
        
-        premium = benefit.value * rate/1000 + 1000;
+        premium = Math.round(benefit.value * rate/1000 + 1000);
 
-        let halfYear = premium/2
-        let toFixedhalfyear = halfYear.toFixed(2)
+        let halfYear = Math.round(premium/2)
 
-        let oneMonth = premium/12
-        let toFixedOneMonth = oneMonth.toFixed(2)
-
-
-        let quarter = premium/3
-        let toFixedQuarterly = quarter.toFixed(2)
-
+        let oneMonth = Math.round(premium/12)
         
-        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual premium:</span>  ' + premium.toFixed(2)
+
+
+        let quarterly = Math.round(premium/3)
         
-        semiAnnual.innerHTML = '<span class="text-blue-700 mr-4">Semi-annual premium:</span>  ' +  toFixedhalfyear
+        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual premium:</span>  ' + premium
         
-        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly premium:</span>  ' + toFixedQuarterly
+        semiAnnual.innerHTML = '<span class="text-blue-700 mr-4">Semi-annual premium:</span>  ' +  halfYear
+        
+        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly premium:</span>  ' + quarterly
 
         monthly.innerHTML= '<span class="text-blue-700 mr-4">Monthly premium:</span>  ' + 
-        toFixedOneMonth
+        oneMonth
 
         
       }
