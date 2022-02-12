@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/dist/output.css">
     <script src="static/indexFep.js"></script>
-    <title>Annuity Benefit</title>
+    <title>FEP Sum Assured</title>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -34,7 +34,7 @@
                 Calculate the sum Assured when you enter the appropriate data.
               </p>
 
-              <h4 class="text-xs sm:text-lg mt-2 sm:mt-20">Calculate your annual Premium <a class=" text-white bg-red-600 rounded p-1" href="fep.html">Click here</a></h4>
+              <h4 class="text-xs sm:text-lg mt-2 sm:mt-20">To calculate your annual Premium <a class=" text-white bg-red-600 rounded p-1" href="fep.html">Click here</a></h4>
             </div>
           </div>
           <div class="mt-5 md:mt-0 md:col-span-2">
@@ -91,8 +91,8 @@
                     </div>
       
                     <div class="col-span-6 sm:col-span-3">
-                      <label for="earning-age" class="block text-sm font-medium">Duration</label>
-                      <select id="earning-age" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                      <label for="duration" class="block text-sm font-medium">Duration</label>
+                      <select id="duration" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         <option value="0">6 years</option>
                         <option value="1">9 years</option>
                         <option value="2">12 years</option>
@@ -101,8 +101,8 @@
                     </div>
 
                     <div class="col-span-6 sm:col-span-3">
-                      <label for="premium_frequency" class="block text-sm font-medium">Mode</label>
-                      <select id="premium-frequency" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                      <label for="mode" class="block text-sm font-medium">Mode</label>
+                      <select id="mode" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         <option value="1">Annual</option>
                         <option value="0.52">semi-annual</option>
                         <option value="0.27">Quarterly</option>
@@ -111,12 +111,12 @@
                     </div>
 
                     <div class="col-span-6 sm:col-span-6 lg:col-span-2">
-                      <label for="premium" class="block text-sm font-medium ">Annual Premium</label>
-                      <input type="text" name="city" id="premium" autocomplete="address-level2" class="py-2 mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"required pattern="\d+">
+                      <label for="annualPremium" class="block text-sm font-medium ">Annual Premium</label>
+                      <input type="text" name="city" id="annualPremium" autocomplete="address-level2" class="py-2 mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"required pattern="\d+">
                     </div>
                 
                 <div class="px-4 py-3 text-right sm:px-4 sm:ml-1 mt-2 sm:mt-4">
-                  <button onclick="fepSA()" id="benefit" type="button" class="inline-flex justify-center py-2 px-5 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-900 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ml-px">
+                  <button onclick="fepSA()" type="button" class="inline-flex justify-center py-2 px-5 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-900 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ml-px">
                     Send
                   </button>
                 </div>
