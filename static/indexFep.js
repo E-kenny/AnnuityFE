@@ -3,6 +3,13 @@ function fep() {
     const duration = document.getElementById("duration");
     const mode = document.getElementById("mode");
     const sumAssured = document.getElementById("sumAssured");
+    const output = document.getElementById("output")
+    const bonus = document.getElementById("bonus")
+    const first = document.getElementById("first")
+    const second = document.getElementById("second")
+    const full = document.getElementById("full")
+    const totalPremium = document.getElementById("totalPremium")
+    const end = document.getElementById("end")
     
 
     if (isNaN(sumAssured.value) || !sumAssured.value){
@@ -78,6 +85,13 @@ function fepSA() {
     const duration = document.getElementById("duration");
     const mode = document.getElementById("mode");
     const annualPremium = document.getElementById("annualPremium");
+    const output = document.getElementById("output")
+    const bonus = document.getElementById("bonus")
+    const first = document.getElementById("first")
+    const second = document.getElementById("second")
+    const full = document.getElementById("full")
+    const totalPremium = document.getElementById("totalPremium")
+    const end = document.getElementById("end")
 
     
     if (isNaN(annualPremium.value) || !annualPremium.value){
