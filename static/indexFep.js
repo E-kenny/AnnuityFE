@@ -96,7 +96,7 @@ function fepSA() {
     
     if (isNaN(annualPremium.value) || !annualPremium.value){
            
-        output.innerHTML='<span class="text-red-600 text-size-sm">Please insert a valid sum assured</span>';
+        output.innerHTML='<span class="text-red-600 text-size-sm">Please insert a valid Annual premium</span>';
                 
         bonus.innerHTML = '';
         
