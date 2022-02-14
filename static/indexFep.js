@@ -39,21 +39,27 @@ function fep() {
         }
 
         let policyFee ='';
+        let frequency = '';
 
         if (mode.value == 1 ) {
             policyFee =600;
+            frequency = 1;
         }else if(mode.value == 0.52){
             policyFee = 335;
+            frequency = 2;
         }else if(mode.value == 0.27){
             policyFee = 210;
+            frequency = 4;
         }else{
             policyFee = 100;
+            frequency = 12;
         }
     
         let rate=data[age.value][duration.value]
         let annualPremium = (sumAssured.value * rate * mode.value/1000) + policyFee   
 
-        let durability = ''
+        let durability = '';
+        
         let sumAssuredInt = parseInt(sumAssured.value)
         
         if (duration.value == 0 ) {
@@ -79,7 +85,7 @@ function fep() {
         full.innerHTML= '<span class="text-blue-700 mr-4">full partial maturity = </span>  ' + 
         Math.round(sumAssuredInt)
 
-        totalPremium.innerHTML= '<span class="text-blue-700 mr-4">Total premium in ' + durability + ' years = </span>  ' + Math.round(annualPremium * durability)
+        totalPremium.innerHTML= '<span class="text-blue-700 mr-4">Total premium in ' + durability + ' years = </span>  ' + Math.round(annualPremium * durability * frequency)
 
         totalBonus.innerHTML= '<span class="text-blue-700 mr-4">Total bonus in ' + durability + ' years = </span>  ' + Math.round(sumAssuredInt * 4/100 * durability)
         
@@ -133,15 +139,20 @@ function fepSA() {
         }
     
         let policyFee ='';
+        let frequency = '';
 
         if (mode.value == 1 ) {
             policyFee =600;
+            frequency = 1;
         }else if(mode.value == 0.52){
             policyFee = 335;
+            frequency = 2;
         }else if(mode.value == 0.27){
             policyFee = 210;
+            frequency = 4;
         }else{
             policyFee = 100;
+            frequency = 12;
         }
 
         let rate=data[age.value][duration.value]
@@ -173,7 +184,7 @@ function fepSA() {
         full.innerHTML= '<span class="text-blue-700 mr-4">full partial maturity = </span>  ' + 
         Math.round(sumAssured)
 
-        totalPremium.innerHTML= '<span class="text-blue-700 mr-4">Total premium in ' + durability + ' years = </span>  ' + Math.round(annualPremium.value * durability)
+        totalPremium.innerHTML= '<span class="text-blue-700 mr-4">Total premium in ' + durability + ' years = </span>  ' + Math.round(annualPremium.value * durability * frequency)
 
         totalBonus.innerHTML= '<span class="text-blue-700 mr-4">Total bonus in ' + durability + ' years = </span>  ' + Math.round(sumAssured * 4/100 * durability)
         
