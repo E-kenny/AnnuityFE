@@ -87,7 +87,7 @@ function fep() {
 
         totalPremium.innerHTML= '<span class="text-blue-700 mr-4">Total premium in ' + durability + ' years = </span>  ' + Math.round(annualPremium * durability * frequency)
 
-        totalBonus.innerHTML= '<span class="text-blue-700 mr-4">Total bonus in ' + durability + ' years = </span>  ' + Math.round(sumAssuredInt * 4/100 * durability)
+        totalBonus.innerHTML= '<span class="text-blue-700 mr-4">Total bonus in ' + durability + ' years = </span>  ' + Math.round(sumAssuredInt * 4/100 * durability * frequency)
         
         end.innerHTML= '<span class="text-blue-700 mr-4">For ' + durability + ' years you will get = </span>  ' + ((sumAssuredInt * 4/100 * durability)  + (sumAssuredInt * 25/100) + (sumAssuredInt * 25/100) + (sumAssuredInt))
         
@@ -186,7 +186,7 @@ function fepSA() {
 
         totalPremium.innerHTML= '<span class="text-blue-700 mr-4">Total premium in ' + durability + ' years = </span>  ' + Math.round(annualPremium.value * durability * frequency)
 
-        totalBonus.innerHTML= '<span class="text-blue-700 mr-4">Total bonus in ' + durability + ' years = </span>  ' + Math.round(sumAssured * 4/100 * durability)
+        totalBonus.innerHTML= '<span class="text-blue-700 mr-4">Total bonus in ' + durability + ' years = </span>  ' + Math.round(sumAssured * 4/100 * durability * frequency)
         
         end.innerHTML= '<span class="text-blue-700 mr-4">For ' + durability + ' years you will get = </span>  ' + Math.round(((sumAssured * 4/100 * durability) + (sumAssured * 25/100) + (sumAssured * 25/100) + (sumAssured)))
         
