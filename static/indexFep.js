@@ -89,7 +89,7 @@ function fep() {
 
         totalBonus.innerHTML= '<span class="text-blue-700 mr-4">Total bonus in ' + durability + ' years = </span>  ' + Math.round(sumAssuredInt * 4/100 * durability * frequency)
         
-        end.innerHTML= '<span class="text-blue-700 mr-4">For ' + durability + ' years you will get = </span>  ' + ((sumAssuredInt * 4/100 * durability)  + (sumAssuredInt * 25/100) + (sumAssuredInt * 25/100) + (sumAssuredInt))
+        end.innerHTML= '<span class="text-blue-700 mr-4">For ' + durability + ' years you will get = </span>  ' + ((sumAssuredInt * 4/100 * durability)  + (sumAssuredInt * 25/100) + (sumAssuredInt * 25/100) + (sumAssuredInt) * frequency)
         
       }
 
@@ -188,7 +188,7 @@ function fepSA() {
 
         totalBonus.innerHTML= '<span class="text-blue-700 mr-4">Total bonus in ' + durability + ' years = </span>  ' + Math.round(sumAssured * 4/100 * durability * frequency)
         
-        end.innerHTML= '<span class="text-blue-700 mr-4">For ' + durability + ' years you will get = </span>  ' + Math.round(((sumAssured * 4/100 * durability) + (sumAssured * 25/100) + (sumAssured * 25/100) + (sumAssured)))
+        end.innerHTML= '<span class="text-blue-700 mr-4">For ' + durability + ' years you will get = </span>  ' + Math.round(((sumAssured * 4/100 * durability) + (sumAssured * 25/100) + (sumAssured * 25/100) + (sumAssured) * frequency))
         
       }
 
