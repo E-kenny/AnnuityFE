@@ -198,7 +198,7 @@ function fepSA() {
 
         totalBonus.innerHTML= '<span class="text-blue-700 mr-4">Total bonus in ' + durability + ' years = </span>  ' + Math.round(sumAssured * 4/100 * durability * frequency)
         
-        end.innerHTML= '<span class="text-blue-700 mr-4">For ' + durability + ' years you will get = </span>  ' + Math.round(((sumAssured * 4/100 * durability * frameElement) + (sumAssured * 25/100) + (sumAssured * 25/100) + (sumAssured)))
+        end.innerHTML= '<span class="text-blue-700 mr-4">For ' + durability + ' years you will get = </span>  ' + Math.round(((sumAssured * 4/100 * durability * frequency) + (sumAssured * 25/100) + (sumAssured * 25/100) + (sumAssured)))
         
       }
 
