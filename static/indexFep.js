@@ -40,19 +40,24 @@ function fep() {
 
         let policyFee ='';
         let frequency = '';
+        let word = '';
 
         if (mode.value == 1 ) {
             policyFee =600;
             frequency = 1;
+            word = "Annual"
         }else if(mode.value == 0.52){
             policyFee = 335;
             frequency = 2;
+            word = "Semi Annual"
         }else if(mode.value == 0.27){
             policyFee = 210;
             frequency = 4;
+            word = "Quarterly"
         }else{
             policyFee = 100;
             frequency = 12;
+            word = "Monthly"
         }
     
         let rate=data[age.value][duration.value]
@@ -74,9 +79,9 @@ function fep() {
 
 
         
-        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual premium = </span>  ' + Math.round(annualPremium)
+        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">'+ word + ' premium = </span>  ' + Math.round(annualPremium)
         
-        bonus.innerHTML = '<span class="text-blue-700 mr-4">Yearly bonus = </span>  ' +  Math.round(sumAssuredInt * 4/100)
+        bonus.innerHTML = '<span class="text-blue-700 mr-4">' + word + ' bonus = </span>  ' +  Math.round(sumAssuredInt * 4/100)
         
         first.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">first Partial maturity = </span>  ' + Math.round(sumAssuredInt * 25/100)
 
@@ -140,19 +145,24 @@ function fepSA() {
     
         let policyFee ='';
         let frequency = '';
+        let word = '';
 
         if (mode.value == 1 ) {
             policyFee =600;
             frequency = 1;
+            word = "Annual"
         }else if(mode.value == 0.52){
             policyFee = 335;
             frequency = 2;
+            word = "Semi Annual"
         }else if(mode.value == 0.27){
             policyFee = 210;
             frequency = 4;
+            word = "Quarterly"
         }else{
             policyFee = 100;
             frequency = 12;
+            word = "Monthly"
         }
 
         let rate=data[age.value][duration.value]
@@ -174,7 +184,7 @@ function fepSA() {
         
         output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Sum assured = </span>  ' + Math.round(sumAssured)
         
-        bonus.innerHTML = '<span class="text-blue-700 mr-4">Yearly bonus = </span>  ' +  Math.round(sumAssured * 4/100)
+        bonus.innerHTML = '<span class="text-blue-700 mr-4">' + word + ' bonus = </span>  ' +  Math.round(sumAssured * 4/100)
         
         first.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">first Partial maturity = </span>  ' + Math.round(sumAssured * 25/100)
 
