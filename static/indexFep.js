@@ -40,24 +40,21 @@ function fep() {
 
         let policyFee ='';
         let frequency = '';
-        let word = '';
 
         if (mode.value == 1 ) {
             policyFee =600;
             frequency = 1;
-            word = 'Annual';
+           
         }else if(mode.value == 0.52){
             policyFee = 335;
             frequency = 2;
-            word = 'Semi-Annual';
         }else if(mode.value == 0.27){
             policyFee = 210;
             frequency = 4;
-            word = 'Quarterly';
         }else{
             policyFee = 100;
             frequency = 12;
-            word = 'Monthly';
+           
         }
     
         let rate=data[age.value][duration.value]
@@ -79,9 +76,9 @@ function fep() {
 
 
         
-        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">' + word + ' Premium = </span>  ' + Math.round(annualPremium)
+        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual Premium = </span>  ' + Math.round(annualPremium)
         
-        bonus.innerHTML = '<span class="text-blue-700 mr-4">' + word + ' bonus= </span>  ' +  Math.round(sumAssuredInt * 4/100)
+        bonus.innerHTML = '<span class="text-blue-700 mr-4">Bonus = </span>  ' +  Math.round(sumAssuredInt * 4/100)
         
         first.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">first Partial maturity = </span>  ' + Math.round(sumAssuredInt * 25/100)
 
@@ -92,9 +89,9 @@ function fep() {
 
         totalPremium.innerHTML= '<span class="text-blue-700 mr-4">Total premium in ' + durability + ' years = </span>  ' + Math.round(annualPremium * durability * frequency)
 
-        totalBonus.innerHTML= '<span class="text-blue-700 mr-4">Total bonus in ' + durability + ' years = </span>  ' + Math.round(sumAssuredInt * 4/100 * durability * frequency)
+        totalBonus.innerHTML= '<span class="text-blue-700 mr-4">Total bonus in ' + durability + ' years = </span>  ' + Math.round(sumAssuredInt * 4/100 * durability)
         
-        end.innerHTML= '<span class="text-blue-700 mr-4">For ' + durability + ' years you will get = </span>  ' + ((sumAssuredInt * 4/100 * durability * frequency)  + (sumAssuredInt * 25/100) + (sumAssuredInt * 25/100) + (sumAssuredInt))
+        end.innerHTML= '<span class="text-blue-700 mr-4">For ' + durability + ' years you will get = </span>  ' + ((sumAssuredInt * 4/100 * durability)  + (sumAssuredInt * 25/100) + (sumAssuredInt * 25/100) + (sumAssuredInt))
         
       }
 
@@ -145,24 +142,23 @@ function fepSA() {
     
         let policyFee ='';
         let frequency = '';
-        let word = '';
 
         if (mode.value == 1 ) {
             policyFee =600;
             frequency = 1;
-            word = 'Annual';
+            
         }else if(mode.value == 0.52){
             policyFee = 335;
             frequency = 2;
-            word = 'Semi-Annual';
+            
         }else if(mode.value == 0.27){
             policyFee = 210;
             frequency = 4;
-            word = 'Quarterly';
+            
         }else{
             policyFee = 100;
             frequency = 12;
-            word = 'Monthly';
+            
         }
 
         let rate=data[age.value][duration.value]
@@ -184,7 +180,7 @@ function fepSA() {
         
         output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Sum assured = </span>  ' + Math.round(sumAssured)
         
-        bonus.innerHTML = '<span class="text-blue-700 mr-4">' + word + ' bonus = </span>  ' +  Math.round(sumAssured * 4/100)
+        bonus.innerHTML = '<span class="text-blue-700 mr-4">Bonus = </span>  ' +  Math.round(sumAssured * 4/100)
         
         first.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">first Partial maturity = </span>  ' + Math.round(sumAssured * 25/100)
 
@@ -194,11 +190,11 @@ function fepSA() {
         full.innerHTML= '<span class="text-blue-700 mr-4">full partial maturity = </span>  ' + 
         Math.round(sumAssured)
 
-        totalPremium.innerHTML= '<span class="text-blue-700 mr-4">Total premium in ' + durability + ' years = </span>  ' + Math.round(annualPremium.value * durability * frequency)
+        totalPremium.innerHTML= '<span class="text-blue-700 mr-4">Total premium in ' + durability + ' years = </span>  ' + Math.round(annualPremium.value * durability)
 
         totalBonus.innerHTML= '<span class="text-blue-700 mr-4">Total bonus in ' + durability + ' years = </span>  ' + Math.round(sumAssured * 4/100 * durability * frequency)
         
-        end.innerHTML= '<span class="text-blue-700 mr-4">For ' + durability + ' years you will get = </span>  ' + Math.round(((sumAssured * 4/100 * durability * frequency) + (sumAssured * 25/100) + (sumAssured * 25/100) + (sumAssured)))
+        end.innerHTML= '<span class="text-blue-700 mr-4">For ' + durability + ' years you will get = </span>  ' + Math.round(((sumAssured * 4/100 * durability) + (sumAssured * 25/100) + (sumAssured * 25/100) + (sumAssured)))
         
       }
 
