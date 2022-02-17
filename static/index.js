@@ -370,13 +370,13 @@ function benefithandler() {
         
 
 
-        let quarterly = Math.round(premium/3)
+        let quarter = Math.round(premium/3)
         
         output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual premium:</span>  ' + premium
         
         semiAnnual.innerHTML = '<span class="text-blue-700 mr-4">Semi-annual premium:</span>  ' +  halfYear
         
-        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly premium:</span>  ' + quarterly
+        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly premium:</span>  ' + quarter
 
         monthly.innerHTML= '<span class="text-blue-700 mr-4">Monthly premium:</span>  ' + 
         oneMonth

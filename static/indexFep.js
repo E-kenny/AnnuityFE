@@ -84,12 +84,12 @@ function fep() {
 
         second.innerHTML= '<span class="text-blue-700 mr-4">Second partial maturity =</span>' +Math.round(sumAssuredInt * 25/100)
 
-        full.innerHTML= '<span class="text-blue-700 mr-4">full partial maturity =</span>' + 
+        full.innerHTML='<span class="text-blue-700 mr-4">full partial maturity =</span>' + 
         Math.round(sumAssuredInt)
 
-        totalPremium.innerHTML= '<span class="text-blue-700 mr-4">Total premium in ' + durability + ' years =</span>' + Math.round(annualPremium * durability * frequency)
+        totalPremium.innerHTML='<span class="text-blue-700 mr-4">Total premium in ' + durability + ' years =</span>' + Math.round(annualPremium * durability * frequency)
 
-        totalBonus.innerHTML= '<span class="text-blue-700 mr-4">Total bonus in ' + durability + ' years =</span>' + Math.round(sumAssuredInt * 4/100 * durability)
+        totalBonus.innerHTML='<span class="text-blue-700 mr-4">Total bonus in ' + durability + ' years =</span>'+Math.round(sumAssuredInt * 4/100 * durability)
         
         end.innerHTML= '<span class="text-blue-700 mr-4">For ' + durability + ' years you will get =</span>' + ((sumAssuredInt * 4/100 * durability)  + (sumAssuredInt * 25/100) + (sumAssuredInt * 25/100) + (sumAssuredInt))
         
