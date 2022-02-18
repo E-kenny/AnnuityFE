@@ -190,7 +190,7 @@ function fepSA() {
         full.innerHTML= '<span class="text-blue-700 mr-4">Full Partial Maturity =</span>' + 
         Math.round(sumAssured)
 
-        totalPremium.innerHTML='<span class="text-blue-700 mr-4">Total Premium in ' + durability + ' years = </span>' + Math.round(parseInt(annualPremium.value) * durability * frequency)
+        totalPremium.innerHTML='<span class="text-blue-700 mr-4">Total Premium in ' + durability + ' years = </span>' + Math.round(annualPremium.value * durability * frequency)
 
         totalBonus.innerHTML='<span class="text-blue-700 mr-4">Total Bonus in ' + durability + ' years =</span>' + Math.round(sumAssured * 4/100 * durability)
         
