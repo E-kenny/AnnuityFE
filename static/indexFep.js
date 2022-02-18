@@ -162,7 +162,7 @@ function fepSA() {
         }
 
         let rate=data[age.value][duration.value]
-        let sumAssured = (parseInt(annualPremium.value) *1000/rate * parseInt(mode.value)) - policyFee   
+        let sumAssured = parseInt(annualPremium.value) *1000/rate * parseInt(mode.value) - policyFee   
 
         let durability = ''
         
