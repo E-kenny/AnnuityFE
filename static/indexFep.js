@@ -1,5 +1,8 @@
-let fepPremium=document.querySelector('#fepPre')
-fepPremium.addEventListener('click', fep)
+
+let fepSumAssured=document.querySelector('#fepSum');
+fepSumAssured.addEventListener('click', fepSA);
+let fepPremium=document.querySelector('#fepPre');
+fepPremium.addEventListener('click', fep);
 
 function fep() {
     const age = document.getElementById("age");
@@ -102,8 +105,7 @@ function fep() {
     
 }
 
-let fepSumAssured=document.querySelector('#fepSum')
-fepSumAssured.addEventListener('click', fepSA)
+
 
 function fepSA() {
     const age = document.getElementById("age");
