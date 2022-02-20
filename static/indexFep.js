@@ -1,8 +1,8 @@
-
-let fepSumAssured=document.querySelector('#fepSum');
-fepSumAssured.addEventListener('click', fepSA);
-let fepPremium=document.querySelector('#fepPre');
-fepPremium.addEventListener('click', fep);
+// let fepSumAssured=document.getElementById('sum') 
+// let fepPremium=document.getElementById('pre')
+// fepPremium.addEventListener('click', fep )
+// fepSumAssured.addEventListener('click', fepSA)
+// alert('hello world')
 
 function fep() {
     const age = document.getElementById("age");
@@ -112,35 +112,12 @@ function fepSA() {
     const duration = document.getElementById("duration");
     const mode = document.getElementById("mode");
     const annualPremium = document.getElementById("annualPremium");
-    const output = document.getElementById("output")
-    const bonus = document.getElementById("bonus")
-    const first = document.getElementById("first")
-    const second = document.getElementById("second")
-    const full = document.getElementById("full")
-    const totalPremium = document.getElementById("totalPremium")
-    const end = document.getElementById("end")
-
-    
+    const output = document.getElementById("output");  
+  
     if (isNaN(annualPremium.value) || !annualPremium.value){
            
         output.innerHTML='<span class="text-red-600 text-size-sm">Please insert a valid Annual premium</span>';
                 
-        bonus.innerHTML = '';
-        
-        first.innerHTML = '';
-
-        second.innerHTML= '';
-
-        full.innerHTML= '';
-
-        totalPremium.innerHTML= '';
-
-        totalBonus.innerHTML= '';
-        
-        end.innerHTML= '';
-        
-        
-
      }else {
        
         const data = {
@@ -148,45 +125,25 @@ function fepSA() {
         }
     
         let policyFee ='';
-        let frequency = '';
-
+       
         if (mode.value == 1 ) {
             policyFee =600;
-            frequency = 1;
-            
+                
         }else if(mode.value == 0.52){
             policyFee = 335;
-            frequency = 2;
-            
+                        
         }else if(mode.value == 0.27){
             policyFee = 210;
-            frequency = 4;
-            
+                      
         }else{
-            policyFee = 100;
-            frequency = 12;
-            
-        }
+            policyFee = 100;           
+       }
 
         let rate=data[age.value][duration.value]
         let sumAssured = annualPremium.value *1000/rate * mode.value - policyFee   
 
-        let durability = ''
-        
-        if (duration.value == 0 ) {
-            durability = 6;
-        }else if(duration.value == 1){
-            durability = 9;
-        }else if(duration.value == 2){
-            durability = 12;
-        }else{
-            durability = 15;
-        }
-
-
         
         output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Sum Assured =</span>' + Math.round(sumAssured)
-        
         
         
       }

@@ -1,7 +1,8 @@
-let annuityBenefit=document.querySelector('#benefit');
-let annuityPremium=document.querySelector('#premium');
-annuityBenefit.addEventListener('click', benefithandler);
-annuityPremium.addEventListener('click', premiumhandler);
+    let annuityBenefit=document.querySelector('#benefit');
+    let annuityPremium=document.querySelector('#premium');
+    annuityBenefit.addEventListener('click', benefithandler);
+    annuityPremium.addEventListener('click', premiumhandler);
+    
 
 //BENEFIT CALCULATION
 function benefithandler() {
