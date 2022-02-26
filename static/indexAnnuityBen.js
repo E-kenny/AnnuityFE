@@ -4,7 +4,7 @@ annuityBenefit.addEventListener('click', benefithandler);
 
 //BENEFIT CALCULATION
 function benefithandler() {
-    const premium = document.querySelector('#premium');
+    const premium = document.querySelector('#annualPremium');
     const age = document.querySelector('#age');
     const gender = document.querySelector('#gender');
     const guarantyPeriod = document.querySelector('#guaranty-period');
