@@ -5,41 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/dist/output.css">
-    <title>Annuity Premium</title>
+    <title>Annuity Benefit</title>
 </head>
 <body>
     <!-- Navigation Bar -->
-    <!-- This example requires Tailwind CSS v2.0+ -->
-<div class=" bg-white mx-4 fixed inset-x-0 top-0 left-0">
+   
+<div class="bg-white mx-4 fixed inset-x-0 top-0 left-0">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+     
       <div class="flex justify-start lg:w-0 lg:flex-1">
         <a href="#">
-          <span class="sr-only">Workflow</span>
-          <img class="h-8 w-auto sm:h-10" src="static/images/aiico-logo-w-160.png" alt="AIICO_logo">
+             <img class="h-8 w-auto sm:h-10" src="static/images/aiico-logo-w-160.png" alt="AIICO_logo">
         </a>
       </div>
 
       <div>
 
-        <a href="fep.html" class="text-blue-700 ">FEP</a>
+        <a href="fepPre.html" class="text-blue-700">FEP</a>
       </div>
+
     </div>
   </div>
 </div>
 
-<!--End of Navigation Bar -->
-
+<!-- End of Navigation Bar -->
       
         <div class="mt-28 m-4 md:grid md:grid-cols-3 md:gap-6">
           <div class="md:col-span-1">
             <div class="px-4 sm:px-0">
-              <h3 class="text-lg font-medium leading-6 text-gray-900">Calculate Annuity Premium</h3>
+              <h3 class="text-lg font-medium leading-6 text-gray-900">Calculate Annuity Benefit</h3>
               <p class="mt-1 text-sm text-gray-600">
-                Calculate the premium you will be paying when you correctly enter your data.
+                Calculate the benefit you will be receiving annually when you correctly enter your data.
               </p>
 
-              <h4 class="text-xs sm:text-lg mt-2 sm:mt-20">If you want to calculate your benefit <a class=" text-blue-700" href="index.html">Click here</a></h4>
+              <h4 class="text-xs sm:text-lg mt-2 sm:mt-20">If you want to calculate your premium <a class=" text-blue-700" href="annuityPremium.html">Click here</a></h4>
             </div>
           </div>
           <div class="mt-5 md:mt-0 md:col-span-2">
@@ -128,23 +128,24 @@
                         <option value="4">70 years</option>
                       </select>
                     </div>
+
                     <div class="col-span-6 sm:col-span-3">
                       <label for="premium_frequency" class="block text-sm font-medium">Premium Frequency</label>
-                      <select id="premium-frequency" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" >
+                      <select id="premium-frequency" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         <option value="single">Single Premium (flat Rate)</option>
                         <option value="annual">Annual premium(flat Rate)</option>
                         <option value="single5">Single premium(5% escalating Rate)</option>
                         <option value="annual5">Annual premium(5% escalating Rate)</option>
                       </select>
                     </div>
-            
+
                     <div class="col-span-6 sm:col-span-6 lg:col-span-2">
-                      <label for="benefit" class="block text-sm font-medium ">Annual Benefit</label>
-                      <input type="text" name="city" id="benefit" autocomplete="address-level2" class="py-2 mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required pattern="\d+">
+                      <label for="annualPremium" class="block text-sm font-medium ">Annual Premium</label>
+                      <input type="text" name="city" id="premium" autocomplete="address-level2" class="py-2 mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"required pattern="\d+">
                     </div>
-              
+                
                 <div class="px-4 py-3 text-right sm:px-4 sm:ml-1 mt-2 sm:mt-4">
-                  <button id="premium" type="button" class="inline-flex justify-center py-2 px-5 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-900 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                  <button id="benefit" type="button" class="inline-flex justify-center py-2 px-5 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-900 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ml-px">
                     Send
                   </button>
                 </div>
@@ -152,42 +153,41 @@
             </form>
           </div>
         </div>
+
 <div class="">
-  <!-- Answer to the calculation -->
-    <div id="output" class="sm:text-lg text-sm text-green-600 w-10/12 m-auto my-5">
-      Premium result will display here
-    </div>
-      <!-- Answer to the calculation -->
-    <div id="semi-annual" class="sm:text-lg text-sm text-green-600 w-10/12 m-auto my-5"></div>
-  
+<!-- Answer to the calculation -->
+  <div id="output" class="sm:text-lg text-sm text-green-600 w-10/12  m-auto my-5">
+    Benefit result will display here
+  </div>
     <!-- Answer to the calculation -->
+  <div id="semi-annual" class="sm:text-lg text-sm text-green-600 w-10/12 m-auto my-5"></div>
+
+  <!-- Answer to the calculation -->
   <div id="quarterly" class="sm:text-lg text-sm text-green-600 w-10/12 m-auto my-5"></div>
 
-          <!-- Answer to the calculation -->
-    <div id="monthly" class="sm:text-lg text-sm text-green-600 w-10/12 m-auto my-5"></div>
-              
-  </div>
-  
-    <div class="m-4">
-    <h2 class="italic text-red-600 text-size-lg"> 
-      Note:
-    
-    </h2>
-     <ul>
-        <li>(1) On death of the Policyholder before commencement of annuity payment, all premium paid are refunded with interest compounded at 6% per annum
-        </li>
-        <br>
-        <li>
-            (2) On death of the annuitant after annuity payment commences, a lump sum of five (5) times the annual annuity at the point of death together with any balance resulting from guarantee becomes payable.
-        </li>
-      
-      </ul>
-  </div>  
-<div>
-  
-  <div class="mx-auto w-40 text-base sm:text-l">
-    <footer>&copy Engr. E_kenny 2022</footer>
-  </div>
-  <script src="static/index.js"></script>
+        <!-- Answer to the calculation -->
+  <div id="monthly" class="sm:text-lg text-sm text-green-600 w-10/12 m-auto my-5"></div>
+            
+</div>
+             
+
+<div class="m-4">
+  <h2 class="italic text-red-600 text-size-lg"> Note:</h2>
+  <ol>
+    <li>(1) On death of the Policyholder before commencement of annuity payment, all premium paid are refunded with interest compounded at 6% per annum
+    </li>
+    <br>
+    <li>
+      (2) On death of the annuitant after annuity payment commences, a lump sum of five (5) times the annual annuity at the point of death together with any balance resulting from guarantee becomes payable.
+    </li>
+
+  </ol>
+</div>
+
+
+<div class="mx-auto w-40 text-base sm:text-l">
+  <footer>&copy Engr. E_kenny 2022</footer>
+</div>
+<script src="static/indexAnnuityBen.js"></script>
 </body>
 </html>
