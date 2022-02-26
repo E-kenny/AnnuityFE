@@ -584,6 +584,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 10rem;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-36 {
+  width: 9rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -598,6 +626,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -823,6 +855,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:h-10 {
     height: 2.5rem;
+  }
+
+  .sm\:w-20 {
+    width: 5rem;
+  }
+
+  .sm\:w-3 {
+    width: 0.75rem;
+  }
+
+  .sm\:w-36 {
+    width: 9rem;
   }
 
   .sm\:rounded-md {
