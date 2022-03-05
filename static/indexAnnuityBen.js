@@ -183,11 +183,11 @@ function benefithandler() {
 
 
         
-        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual benefit:</span>  ' + benefit.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
-        semiAnnual.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Semi-annual benefit:</span>  ' + halfYear.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
-        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly benefit:</span>  ' + quarter.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
+        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual benefit:</span>  ' + benefit.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})
+        semiAnnual.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Semi-annual benefit:</span>  ' + halfYear.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})
+        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly benefit:</span>  ' + quarter.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})
 
-        monthly.innerHTML= '<span class="text-blue-700 text-size-sm mr-4">Monthly benefit:</span>  ' + oneMonth.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
+        monthly.innerHTML= '<span class="text-blue-700 text-size-sm mr-4">Monthly benefit:</span>  ' + oneMonth.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})
      }
     
       

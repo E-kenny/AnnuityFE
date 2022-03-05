@@ -180,14 +180,14 @@ function premiumhandler() {
 
         let quarter = premium/3
         
-        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual premium:</span>  ' + premium.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
+        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual premium:</span>  ' + premium.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})
         
-        semiAnnual.innerHTML = '<span class="text-blue-700 mr-4">Semi-annual premium:</span>  ' +  halfYear.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
+        semiAnnual.innerHTML = '<span class="text-blue-700 mr-4">Semi-annual premium:</span>  ' +  halfYear.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})
         
-        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly premium:</span>  ' + quarter.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
+        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly premium:</span>  ' + quarter.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})
 
         monthly.innerHTML= '<span class="text-blue-700 mr-4">Monthly premium:</span>  ' + 
-        oneMonth.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
+        oneMonth.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})
 
         
       }
