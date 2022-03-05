@@ -170,24 +170,24 @@ function premiumhandler() {
 
      }else {
        
-        premium = Math.round(benefit.value * rate/1000 + 1000);
+        premium = benefit.value * rate/1000 + 1000;
 
-        let halfYear = Math.round(premium/2)
+        let halfYear = premium/2
 
-        let oneMonth = Math.round(premium/12)
+        let oneMonth = premium/12
         
 
 
-        let quarter = Math.round(premium/3)
+        let quarter = premium/3
         
-        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual premium:</span>  ' + premium
+        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual premium:</span>  ' + premium.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
         
-        semiAnnual.innerHTML = '<span class="text-blue-700 mr-4">Semi-annual premium:</span>  ' +  halfYear
+        semiAnnual.innerHTML = '<span class="text-blue-700 mr-4">Semi-annual premium:</span>  ' +  halfYear.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
         
-        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly premium:</span>  ' + quarter
+        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly premium:</span>  ' + quarter.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
 
         monthly.innerHTML= '<span class="text-blue-700 mr-4">Monthly premium:</span>  ' + 
-        oneMonth
+        oneMonth.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
 
         
       }

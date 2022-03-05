@@ -175,19 +175,19 @@ function benefithandler() {
 
     }else{
 
-        benefit =Math.round((premium.value -1000)*1000/rate);
+        benefit =(premium.value -1000)*1000/rate;
 
-        let halfYear = Math.round(benefit/2)
-        let oneMonth = Math.round(benefit/12)
-        let quarter = Math.round(benefit/3)
+        let halfYear = benefit/2
+        let oneMonth = benefit/12
+        let quarter = benefit/3
 
 
         
-        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual benefit:</span>  ' + benefit
-        semiAnnual.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Semi-annual benefit:</span>  ' + halfYear
-        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly benefit:</span>  ' + quarter
+        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual benefit:</span>  ' + benefit.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
+        semiAnnual.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Semi-annual benefit:</span>  ' + halfYear.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
+        quarterly.innerHTML = '<span class="text-blue-700 text-size-sm mr-4">Quarterly benefit:</span>  ' + quarter.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
 
-        monthly.innerHTML= '<span class="text-blue-700 text-size-sm mr-4">Monthly benefit:</span>  ' + oneMonth
+        monthly.innerHTML= '<span class="text-blue-700 text-size-sm mr-4">Monthly benefit:</span>  ' + oneMonth.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
      }
     
       
