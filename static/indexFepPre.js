@@ -43,20 +43,25 @@ function fep() {
 
         let policyFee ='';
         let frequency = '';
+        let modeWord = ''
 
         if (mode.value == 1 ) {
             policyFee =600;
             frequency = 1;
+            modeWord='Annual'
            
         }else if(mode.value == 0.52){
             policyFee = 335;
             frequency = 2;
+            modeWord='Semi-Annual'
         }else if(mode.value == 0.27){
             policyFee = 210;
             frequency = 4;
+            modeWord='Quarterly'
         }else{
             policyFee = 100;
             frequency = 12;
+            modeWord='Monthly'
            
         }
     
@@ -79,7 +84,7 @@ function fep() {
 
 
         
-        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual Premium =</span> ' + annualPremium.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})
+        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">' + modeWord + 'Premium =</span> ' + annualPremium.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})
         
         bonus.innerHTML = '<span class="text-blue-700 mr-4">Bonus = </span>' +  (sumAssuredInt * 4/100).toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 2})
         
