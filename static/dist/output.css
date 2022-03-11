@@ -826,7 +826,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 body {
-  font-style: italic;
+  font-style: oblique;
 }
 
 .hover\:bg-indigo-700:hover {
