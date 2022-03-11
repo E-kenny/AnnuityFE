@@ -826,7 +826,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 body {
-  font-family: "Sofia";
+  font-style: italic;
 }
 
 .hover\:bg-indigo-700:hover {
