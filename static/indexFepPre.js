@@ -84,7 +84,7 @@ function fep() {
 
 
         
-        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">' + modeWord + 'Premium =</span> ' + annualPremium.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})
+        output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">' + modeWord + ' Premium =</span> ' + annualPremium.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})
         
         bonus.innerHTML = '<span class="text-blue-700 mr-4">Bonus = </span>' +  (sumAssuredInt * 4/100).toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 2})
         
