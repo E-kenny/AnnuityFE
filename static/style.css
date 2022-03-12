@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
-    font-style: oblique;
+  font-family: 'Poiret One', cursive;
+        
   }
 
