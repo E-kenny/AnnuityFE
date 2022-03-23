@@ -561,6 +561,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-64 {
+  margin-top: 16rem;
+}
+
 .block {
   display: block;
 }
