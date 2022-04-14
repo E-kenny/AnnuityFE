@@ -179,7 +179,7 @@ function benefithandler() {
 
         let halfYear = benefit/2
         let oneMonth = benefit/12
-        let quarter = benefit/3
+        let quarter = benefit/4
 
 
         
