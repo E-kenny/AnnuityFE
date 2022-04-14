@@ -178,7 +178,7 @@ function premiumhandler() {
         
 
 
-        let quarter = premium/3
+        let quarter = premium/4
         
         output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Annual premium:</span>  ' + premium.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})
         
