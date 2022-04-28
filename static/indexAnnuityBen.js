@@ -175,7 +175,7 @@ function benefithandler() {
 
     }else{
 
-        benefit =(premium.value -1000)*1000/rate;
+        benefit =premium.value*1000/rate -1000*1000/rate;
 
         let halfYear = benefit/2
         let oneMonth = benefit/12
