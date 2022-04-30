@@ -34,7 +34,7 @@ function fepSA() {
        }
 
         let rate=data[age.value][duration.value]
-        let sumAssured = annualPremium.value*1000/rate * mode.value - policyFee * 1000/rate * mode.value 
+        let sumAssured = (annualPremium.value*1000/rate * mode.value) - (policyFee * 1000/rate * mode.value) 
 
         
         output.innerHTML='<span class="text-blue-700 text-size-sm mr-4">Sum Assured =</span>' + (sumAssured).toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 0})
