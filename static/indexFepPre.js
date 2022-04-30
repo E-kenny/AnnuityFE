@@ -66,7 +66,7 @@ function fep() {
         }
     
         let rate=data[age.value][duration.value]
-        let annualPremium = (sumAssured.value /1000)* (rate * mode.value + policyFee)   
+        let annualPremium = (sumAssured.value /1000)* (rate * mode.value) + policyFee   
 
         let durability = '';
         
